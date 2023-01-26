@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>About Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="myjs.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins">
+
+    <link rel="stylesheet" href="mycss.css">
+</head>
+<style type="text/css">
+    label {
+        color: white;
+    }
+</style>
+
+<body>
+    <nav style="border-radius:0px !important; margin:0;border: 0">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Airline Reservation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Pages/UserPOV/aboutUS.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#myModal" data-toggle="modal" data-target="#myModal2"><span
+                                class="glyphicon glyphicon-log-in"></span> Signup</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#myModal" data-toggle="modal" data-target="#myModal"><span
+                                class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        </div>
+    </nav>
+
+
+    <div class="background-wrapper" style="background-image: url(images/airline/c.jpg);">
+
+        <!--header-->
+
+        <div class="container-fluid">
+            <header>
+                <h2></h2>
+                <hr>
+            </header>
+
+            <!--panel-->
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="panel-group panel-transparent">
+                    <div class="panel panel-default panel-transparent">
+                        <div class="panel-heading">
+                            <legend style="text-align: center;">About Us</legend>
+                        </div>
+                        <div class="panel-body" style="">
+                            <form class="form-horizontal" style="padding: 0 5rem 0 5rem; width: 100%; inner:100%">
+                                <div class="form-group">
+                                    <label for="email">This system will be a web-based project that provides clients
+                                        with all the necessary features to book their flight. This integrated airline
+                                        reservation management application features an open architecture that encourages
+                                        the addition of new systems. This means that the application can be updated and
+                                        managed with the needs of the airline business. The application will incorporate
+                                        four main objectives and key models. These modules will be, but not limited to,
+                                        a user registration system, a login system, reservations of flights, and
+                                        cancellation of flights.</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" style="">
+            <div class="container-fluid">
+                <ul class="icons">
+                    <li><a href="https://twitter.com/?lang=en" class="fa fa-twitter" style="color: grey"
+                            target="_blank"></a></li>
+                    <li><a href="https://www.facebook.com/" class="fa fa-facebook" style="color: grey"
+                            target="_blank"></a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" class="fa fa-instagram" style="color: grey"
+                            target="_blank"></a></li>
+                    <li><a href="https://accounts.google.com/signout/chrome/landing?continue=https://mail.google.com&oc=https://mail.google.com&hl=en"
+                            class="fa fa-envelope" style="color: grey" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; Airline Reservation. All rights reserved.
+            </div>
+        </footer>
+
+        <div class="modal fade" id="myModal2" role="dialog" style="padding: 10rem">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content trans-input-area">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="text-align:center;">Signup</h4>
+                    </div>
+
+                    <form action="home.html" form="post">
+                        <div class="modal-body form-group trans-input-area">
+                            <label for="fname" class="form-label"><b>First Name</b></label>
+                            <input type="text" class="form-control" placeholder="Jason" name="fname" required>
+                            <br>
+                            <label for="lname" class="form-label"><b>Last Name</b></label>
+                            <input type="text" class="form-control" placeholder="Connor(s)" name="lname" required>
+                            <br>
+                            <label for="email"><b>Email</b></label>
+                            <input type="email" class="form-control" placeholder="example@email.com" name="email"
+                                required>
+                            <br>
+                            <label for="password"><b>Password</b></label>
+                            <input type="password" class="form-control" placeholder="Enter Password" name="psw"
+                                required>
+                            <br>
+                            <label for="Date">Date of Birth</label>
+                            <input type="date" class="form-control" name="date1" min="1920-01-01" max="2022-05-14"
+                                id="Departure" required>
+                            <br>
+                            <label><b>Address</b></label>
+                            <input type="address" class="form-control" placeholder="1234 Main Street" name="address"
+                                required>
+                            <br>
+                            <label for="phonenum"><b>Phone Number</b></label>
+                            <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="form-control"
+                                placeholder="608-495-4824" name="phonenum" required>
+                            <br>
+                            <button class="btn btn-block form-control" type="submit"
+                                style="background-color: rgb(184, 184, 184); color: white"><a
+                                    href="/Pages/UserPOV/home.html"><b>Signup</b></a></button>
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                        <button class="btn btn-block form-control" type="submit"
+                            style="background-color: rgb(184, 184, 184); color: white"><a
+                                href="/Pages/UserPOV/index.html"><b>Cancel</b></a></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog" style="padding: 10rem">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content trans-input-area">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="text-align:center;">Log In</h4>
+                    </div>
+                    <form action="home.html" form="post">
+                        <div class="modal-body form-group trans-input-area">
+                            <label><b>Email</b></label>
+                            <input type="email" class="form-control" placeholder="example@email.com" name="email"
+                                required>
+                            <br>
+                            <label><b>Password</b></label>
+                            <input type="password" class="form-control" placeholder="Enter Password" name="psw"
+                                required>
+                            <br>
+                            <button class="btn btn-block form-control" type="submit"
+                                style="background-color: rgb(184, 184, 184); color: white"><a
+                                    href="#"><b>Submit</b></a></button>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-block form-control" type="submit"
+                        style="background-color: rgb(184, 184, 184); color: white"><a
+                            href="/Pages/UserPOV/forgotPassword.html"><b>Forgot Password</b></a></button>
+
+                    <button class="btn btn-block form-control" type="submit"
+                        style="background-color: rgb(184, 184, 184); color: white"><a
+                            href="/Pages/UserPOV/index.html"><b>Cancel</b></a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
